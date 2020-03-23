@@ -1,0 +1,15 @@
+/* pages/quota-detail/quota-detail.wxss */
+page {
+  background-color: #ffffff;
+}
+.container {
+  padding: 0 10px 100px 10px;
+}
+
+.btn-copy {
+  position: fixed;
+  width: 368rpx;
+  bottom: 40rpx;
+  left: 200rpx;
+  font-weight: normal;
+}

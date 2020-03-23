@@ -1,0 +1,6 @@
+<!--components/ad-card/ad-card.wxml-->
+<template name="ad-card">
+  <view class="ad-card-container">
+    <image class="cover" src="{{cover_url}}" mode="aspectFill" bindtap="navigateToAdPage" data-linkUrl="{{link_url}}"></image>
+  </view>
+</template>

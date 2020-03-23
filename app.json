@@ -1,13 +1,43 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/discover/discover",
+    "pages/my/my",
+    "components/quota-card/quota-card",
+    "pages/web-view/web-view",
+    "pages/quota-detail/quota-detail",
+    "components/ad-card/ad-card",
+    "components/discover-card/discover-card"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "正能量短句",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#39b54a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-selected.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "images/icon-discover.png",
+        "selectedIconPath": "images/icon-discover-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon-my.png",
+        "selectedIconPath": "images/icon-my-selected.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

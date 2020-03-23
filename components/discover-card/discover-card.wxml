@@ -1,0 +1,12 @@
+<!--components/discover-card/discover-card.wxml-->
+<template name="discover-card">
+  <view class="discover-card" bindtap="navigateToAdPage" data-linkUrl="{{link_url}}">
+    <view class="cover-container">
+      <image class="cover" mode="aspectFill" src="https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg"></image>
+    </view>
+    <view class="des">
+      <view class="des-detail"><text>{{content}}发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa发射点发射fa点发射点fa</text></view>
+      <view class="click-num text-red">{{click_num}}人点击</view>
+    </view>
+  </view>
+</template>

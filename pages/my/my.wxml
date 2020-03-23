@@ -1,0 +1,19 @@
+<!--pages/my/my.wxml-->
+<import src="/components/quota-card/quota-card.wxml" />
+<!-- S=顶部tab -->
+<scroll-view scroll-x class="bg-white nav text-center">
+  <view class="cu-item {{0==TabCur?'text-green cur':'text-gray'}}" bindtap="tabSelect" data-id="0">
+    <text class="cuIcon-appreciate"></text> 已点赞
+  </view>
+  <view class="cu-item {{1==TabCur?'text-green cur':'text-gray'}}" bindtap="tabSelect" data-id="1">
+    <text class="cuIcon-favor"></text> 已收藏
+  </view>
+</scroll-view>
+<!-- E=顶部tab -->
+<!-- S=卡片列表 -->
+<view class="card-list">
+  <view class="card-container" wx:for="{{cardsData}}" wx:key="index">
+    <template is="quota-card" data="{{...item}}" />
+  </view>
+</view>
+<!-- E=卡片列表 -->

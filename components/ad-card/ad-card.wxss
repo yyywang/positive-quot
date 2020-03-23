@@ -1,0 +1,6 @@
+/* components/ad-card/ad-card.wxss */
+.cover {
+  width: 100%;
+  height: 250rpx;
+  border-radius: 8px;
+}

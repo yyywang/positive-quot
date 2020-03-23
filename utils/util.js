@@ -14,6 +14,20 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const navigateToWebView = linkUrl => {
+  wx.navigateTo({
+    url: '/pages/web-view/web-view?linkUrl=' + linkUrl,
+  })
+}
+
+const navigateToDetail = id => {
+  wx.navigateTo({
+    url: '/pages/quota-detail/quota-detail?id=' + id,
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  navigateToWebView: navigateToWebView,
+  navigateToDetail: navigateToDetail
 }

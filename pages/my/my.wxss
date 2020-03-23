@@ -1,6 +1,5 @@
-/* pages/index/index.wxss */
+/* pages/my/my.wxss */
 @import '/components/quota-card/quota-card.wxss';
-@import '/components/ad-card/ad-card.wxss';
 
 .card-list>.card-container {
   padding: 10px 10px 0 10px;

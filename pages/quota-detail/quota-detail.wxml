@@ -1,0 +1,5 @@
+<!--pages/quota-detail/quota-detail.wxml-->
+<view class="container">
+  <view>{{content}}</view>
+  <button class="cu-btn bg-green lg btn-copy" bindtap="copyContent">一键复制</button>
+</view>

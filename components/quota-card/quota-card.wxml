@@ -1,0 +1,21 @@
+<!--components/quota-card/quota-card.wxml-->
+<template name="quota-card">
+	<view class="quota-card">
+		<view class="content"  bindtap="navgateToDetail" data-id="{{id}}" bindlongpress="copyContent" data-abstract="{{abstract}}">{{abstract}}</view>
+		<view class="operator">
+			<view class="like" bindtap="likeOrNotQuota" data-id="{{id}}">
+				<text class="cuIcon-appreciate"></text>
+				<text>{{statistics.like_num}}</text>
+			</view>
+			<view class="collect" bindtap="collectOrNotQuota" data-id="{{id}}">
+				<text class="cuIcon-favor"></text>
+				<text>{{statistics.fav_num}}</text>
+			</view>
+			<!-- <view class="cuIcon-copy text-green"></view> -->
+      <view class="copy" bindtap="copyContent" data-abstract="{{abstract}}">
+        <text>复制</text>
+      </view>
+      <button class="btn-share" open-type="share" size="mini">分享</button>
+		</view>
+	</view>
+</template>

@@ -1,0 +1,6 @@
+/* pages/discover/discover.wxss */
+@import '/components/discover-card/discover-card.wxss';
+
+.card-list>.card-container {
+  padding: 10px 10px 0 10px;
+}
